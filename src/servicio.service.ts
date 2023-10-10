@@ -11,6 +11,6 @@ export class serviciosService{
     constructor(private http: HttpClient){
         
     } get(){
-        return this.URL;
+        return this.http.get(this.URL);
     }
 }

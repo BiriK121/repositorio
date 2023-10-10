@@ -10,6 +10,7 @@ import { GALERIAComponent } from './Component/pages/galeria/galeria.component';
 import { INICIOComponent } from './Component/pages/inicio/inicio.component';
 import { MAPAComponent } from './Component/pages/mapa/mapa.component';
 import { FooterComponent } from './Component/pages/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { FooterComponent } from './Component/pages/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -14,7 +14,7 @@ export class DATOSComponent {
     PuntosList: any[]=[];
     constructor(private SVC:serviciosService, private router:Router){
       this.SVC.get().subscribe((result:any)=>{this.PuntosList=result})
-      
+    console.log(this.PuntosList)
 
     } 
     

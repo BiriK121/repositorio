@@ -1,14 +1,23 @@
-<div class="card" style="width: 18rem;">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body" *ngFor="let item of PuntosList">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">{{item.Name}}</p>
-      <p class="card-text">{{item.Lat}}</p>
-      <p class="card-text">{{item.Long}}</p>
-      <p class="card-text">{{item.Alt}}</p>
-      <p class="card-text">{{item.Desc}}</p>
-    
-  
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
+<table class="table" style="width: 60%; margin:0 25% 0% 25%">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">Latitude</th>
+      <th scope="col">Longitude</th>
+      <th scope="col">Altitude</th>
+      <th scope="col">Descripcion</th>
+      <th scope="col">Lugar</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let item of PuntosList">
+    <tr>
+      <th scope="row">{{item.Id}}</th>
+      <th scope="row">{{item.Lat}}</th>
+      <th scope="row">{{item.Lon}}</th>
+      <th scope="row">{{item.Alt}}</th>
+      <th scope="row">{{item.Desc}}</th>
+      <a routerLink="Datos" class="btn btn-secondary" (click)="Detalle(item.Id)">Go somewhere</a>
+    </tr>
+  </tbody>
+
+</table>

@@ -13,4 +13,13 @@ export class serviciosService{
     } get(){
         return this.http.get(this.URL);
     }
+          //  GetByID(Id:String){
+          //      return new Observable(observer =>{
+           //         this.get().subscribe({result:any[]}=>{
+           //             const filtro = result.filter (item => item.Id === Id)
+          //              return observer.next(filtro[0]);
+           //         })
+           //     })
+
+           // }
 }

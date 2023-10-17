@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {serviciosService} from "../../../../servicio.service";
 import { Router } from '@angular/router';
@@ -17,5 +17,10 @@ export class DATOSComponent {
     console.log(this.PuntosList)
 
     } 
+    Detalle(Id:String){
+      this.router.navigate(['Id',Id]);
+      console.log(Id)
+    }
+   
     
 }
